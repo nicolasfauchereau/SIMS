@@ -1,116 +1,25 @@
-
-        <!DOCTYPE html>
-        <head>
-            
-        
-            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        
-            
-        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
-        
-        
-        
-            
-        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
-        
-        
-        
-            
-        
-            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
-        
-        
-        
-            
-            <style>
-
-            html, body {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                }
-
-            #map {
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                }
-            </style>
-            
-        
-            
-            <style> #map_86c789df7be541a1b10ba8998a251ee0 {
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_73d2d0ddbf5c48249acbe74146553a31 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -119,1028 +28,105 @@
                 }
             </style>
         
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_73d2d0ddbf5c48249acbe74146553a31" ></div>
         
-        
-        </head>
-        <body>
+</body>
+<script>    
+    
+
             
-        
-            
-            <div class="folium-map" id="map_86c789df7be541a1b10ba8998a251ee0" ></div>
-        
-        
-        
-        </body>
-        <script>
-            
-        
+                var southWest = L.latLng(-90, 0.0);
+                var northEast = L.latLng(90, 360.0);
+                var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var southWest = L.latLng(-90, 0.0);
-            var northEast = L.latLng(90, 360.0);
-            var bounds = L.latLngBounds(southWest, northEast);
-
-            var map_86c789df7be541a1b10ba8998a251ee0 = L.map('map_86c789df7be541a1b10ba8998a251ee0', {
-                                           center:[-9,163],
-                                           zoom: 6,
-                                           maxBounds: bounds,
-                                           layers: [],
-                                           crs: L.CRS.EPSG3857
-                                         });
+            var map_73d2d0ddbf5c48249acbe74146553a31 = L.map(
+                                  'map_73d2d0ddbf5c48249acbe74146553a31',
+                                  {center: [-9,163],
+                                  zoom: 6,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
             
         
-        
-            
-            var tile_layer_ba1a2e8554994ab8834fe50af3b147de = L.tileLayer(
+    
+            var tile_layer_1e638bb5b3724371889a7ac16d9ffbe7 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
                     minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: true
                     }
-                ).addTo(map_86c789df7be541a1b10ba8998a251ee0);
+                ).addTo(map_73d2d0ddbf5c48249acbe74146553a31);
 
         
-        
-            
-            var tile_layer_b1a7ac209b19466584bcedb8feeb0c3d = L.tileLayer(
+    
+            var tile_layer_e9bb0bec5cce47dc841e8fa0e9f20bbf = L.tileLayer(
                 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                 {
                     maxZoom: 18,
                     minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
                     attribution: 'ESRI',
                     detectRetina: false
                     }
-                ).addTo(map_86c789df7be541a1b10ba8998a251ee0);
+                ).addTo(map_73d2d0ddbf5c48249acbe74146553a31);
 
         
-        
-            
-            var tile_layer_813d98c9501f400897f63f97b36fe1e8 = L.tileLayer(
+    
+            var tile_layer_dfa152a3ace14a7fb0eadb089f56cd5e = L.tileLayer(
                 'http://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
                 {
                     maxZoom: 18,
                     minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
                     attribution: 'ESRI',
                     detectRetina: false
                     }
-                ).addTo(map_86c789df7be541a1b10ba8998a251ee0);
+                ).addTo(map_73d2d0ddbf5c48249acbe74146553a31);
 
         
-        
-            
-            var tile_layer_4feef058d4b7462d8c0b8318d5d300a2 = L.tileLayer(
+    
+            var tile_layer_414a3406b81a44b787ba555b2b7c68c2 = L.tileLayer(
                 'http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
                 {
                     maxZoom: 18,
                     minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
                     attribution: 'ESRI',
                     detectRetina: false
                     }
-                ).addTo(map_86c789df7be541a1b10ba8998a251ee0);
+                ).addTo(map_73d2d0ddbf5c48249acbe74146553a31);
 
         
+    
+            var feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1 = L.featureGroup(
+                ).addTo(map_73d2d0ddbf5c48249acbe74146553a31);
         
-            
-            var feature_group_672155ba837f4693a35e16093d84ccb2 = L.featureGroup(
-                ).addTo(map_86c789df7be541a1b10ba8998a251ee0);
-        
-        
-            
+    
 
-            var marker_18f3d521121e490ab1c76285263a78c4 = L.marker(
+            var marker_3f06b6b983604bacbb3f35a042687acf = L.marker(
                 [-9.0667,159.2167],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
             
-        
-            
-
-                var custom_icon_d9225de870004c4f894295931c1e4893 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_18f3d521121e490ab1c76285263a78c4.setIcon(custom_icon_d9225de870004c4f894295931c1e4893);
-            
-        
-            
-            var popup_9e2379ec8f5d44658d5be6471c7e9a10 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_dfc14a885d7b47f8b1549c0f036d714a = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIFlhbmRpbmE8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj4xMTY2PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjExNzQ8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjk5LjMyPGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9ZYW5kaW5hXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_9e2379ec8f5d44658d5be6471c7e9a10.setContent(i_frame_dfc14a885d7b47f8b1549c0f036d714a);
-            
-
-            marker_18f3d521121e490ab1c76285263a78c4.bindPopup(popup_9e2379ec8f5d44658d5be6471c7e9a10);
-
-            
-        
-        
-            
-
-            var marker_fb4ad6f2a406491cbfe2afc9002ffa81 = L.marker(
-                [-6.711944,156.396111],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_a52d3c3f22814e0193acd29e094f1c7f = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/deepblue.png',
-                    iconSize: [47.0,81.25],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_fb4ad6f2a406491cbfe2afc9002ffa81.setIcon(custom_icon_a52d3c3f22814e0193acd29e094f1c7f);
-            
-        
-            
-            var popup_806f612112624092b41fb9d02c4e170c = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_9f78ad1a54ae44e49e09c6e3df4a882d = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIENob2lzdWVsIEJheTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjE0NTY8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+ODAwPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xODIuMDA8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0Nob2lzdWVsX0JheV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_806f612112624092b41fb9d02c4e170c.setContent(i_frame_9f78ad1a54ae44e49e09c6e3df4a882d);
-            
-
-            marker_fb4ad6f2a406491cbfe2afc9002ffa81.bindPopup(popup_806f612112624092b41fb9d02c4e170c);
-
-            
-        
-        
-            
-
-            var marker_a4c7fdc182054798ad8fad196e48ce6a = L.marker(
-                [-7.0833,156.75],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_134ec8aa8d894cd1ba3183e0b34013d7 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_a4c7fdc182054798ad8fad196e48ce6a.setIcon(custom_icon_134ec8aa8d894cd1ba3183e0b34013d7);
-            
-        
-            
-            var popup_4b2cccd0d5374619bf6e4e7bad966987 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_586986f23895422f88b51aa59db04ee9 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIFNhc2FtdW5nZ2E8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj45NzY8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+ODAyPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMjEuNzA8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX1Nhc2FtdW5nZ2FfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAgCiAgICAgICAgCiAgICAgICAg" width="300" height="200"></iframe>')[0];
-                popup_4b2cccd0d5374619bf6e4e7bad966987.setContent(i_frame_586986f23895422f88b51aa59db04ee9);
-            
-
-            marker_a4c7fdc182054798ad8fad196e48ce6a.bindPopup(popup_4b2cccd0d5374619bf6e4e7bad966987);
-
-            
-        
-        
-            
-
-            var marker_38d9730189734b5ea95d8887b38db453 = L.marker(
-                [-7.469,157.7434],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_7d1f40d4dd96441fb265dbfe97ee62b1 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_38d9730189734b5ea95d8887b38db453.setIcon(custom_icon_7d1f40d4dd96441fb265dbfe97ee62b1);
-            
-        
-            
-            var popup_97410dddffd24d43bf428346a6916309 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_b5e63eea74694d51bf99a478d51c9d29 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIFdhZ2luYTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjEwMzc8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+ODc4PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMTguMTE8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX1dhZ2luYV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_97410dddffd24d43bf428346a6916309.setContent(i_frame_b5e63eea74694d51bf99a478d51c9d29);
-            
-
-            marker_38d9730189734b5ea95d8887b38db453.bindPopup(popup_97410dddffd24d43bf428346a6916309);
-
-            
-        
-        
-            
-
-            var marker_10e52d49d25b4f68882dda3ee4b86513 = L.marker(
-                [-9.25,159.65],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_3f4e3999998e49bf970103d6cdebc2b2 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_10e52d49d25b4f68882dda3ee4b86513.setIcon(custom_icon_3f4e3999998e49bf970103d6cdebc2b2);
-            
-        
-            
-            var popup_ebece54ed63343e1870ba2e2505b05bd = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_909a89386ba34996be40c79fecd9c5dc = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEtlc2FvPC9oND4KICAgIG9ic2VydmVkID0gPGI+MTEwNjwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj4xMDAxPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMTAuNDk8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0tlc2FvXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_ebece54ed63343e1870ba2e2505b05bd.setContent(i_frame_909a89386ba34996be40c79fecd9c5dc);
-            
-
-            marker_10e52d49d25b4f68882dda3ee4b86513.bindPopup(popup_ebece54ed63343e1870ba2e2505b05bd);
-
-            
-        
-        
-            
-
-            var marker_962a5b6e77ea4c48b0e01af33d9eb78f = L.marker(
-                [-9.41,159.96],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_4ad093eb55f5400aa935933e38773c37 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_962a5b6e77ea4c48b0e01af33d9eb78f.setIcon(custom_icon_4ad093eb55f5400aa935933e38773c37);
-            
-        
-            
-            var popup_feab982513be42029995d0a8f6599223 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_49e68faa12e149229b820acd04a66627 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEhvbmlhcmEgKFZhdmF5YSBSaWRnZSk8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj43OTE8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+ODkxPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj44OC43ODxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fSG9uaWFyYV9fVmF2YXlhX1JpZGdlX185MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_feab982513be42029995d0a8f6599223.setContent(i_frame_49e68faa12e149229b820acd04a66627);
-            
-
-            marker_962a5b6e77ea4c48b0e01af33d9eb78f.bindPopup(popup_feab982513be42029995d0a8f6599223);
-
-            
-        
-        
-            
-
-            var marker_b7689136632a4f408b4b9fb4b482b733 = L.marker(
-                [-9.8693,160.4115],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_a3add2aee38f46bd8760308a21e047ab = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_b7689136632a4f408b4b9fb4b482b733.setIcon(custom_icon_a3add2aee38f46bd8760308a21e047ab);
-            
-        
-            
-            var popup_e2ede76c12e94a0b92d8217f430018a2 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_27bc206224744eeab30f21df3f2f3f4e = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEF2dSBBdnU8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj45NTg8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+NzgxPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMjIuNjY8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0F2dV9BdnVfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAgCiAgICAgICAgCiAgICAgICAg" width="300" height="200"></iframe>')[0];
-                popup_e2ede76c12e94a0b92d8217f430018a2.setContent(i_frame_27bc206224744eeab30f21df3f2f3f4e);
-            
-
-            marker_b7689136632a4f408b4b9fb4b482b733.bindPopup(popup_e2ede76c12e94a0b92d8217f430018a2);
-
-            
-        
-        
-            
-
-            var marker_8875ea43cfee48949de1c55d8467eb0c = L.marker(
-                [-9.2838,159.7324],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_c0962851f5404f61947db43f1a0c457c = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_8875ea43cfee48949de1c55d8467eb0c.setIcon(custom_icon_c0962851f5404f61947db43f1a0c457c);
-            
-        
-            
-            var popup_486a7d07d2534ee99db2284cd594f8c0 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_e12c22c4daec48548957eee42d55ca37 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEtvaGltYXJhbWE8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj44NTQ8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+OTUxPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj44OS44MDxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fS29oaW1hcmFtYV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_486a7d07d2534ee99db2284cd594f8c0.setContent(i_frame_e12c22c4daec48548957eee42d55ca37);
-            
-
-            marker_8875ea43cfee48949de1c55d8467eb0c.bindPopup(popup_486a7d07d2534ee99db2284cd594f8c0);
-
-            
-        
-        
-            
-
-            var marker_ec6ce817d7c447dcaa0154bd0af7a0ba = L.marker(
-                [-9.7277,159.7513],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_f574d22fb18641a6aa2207016ff83bd6 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_ec6ce817d7c447dcaa0154bd0af7a0ba.setIcon(custom_icon_f574d22fb18641a6aa2207016ff83bd6);
-            
-        
-            
-            var popup_3dee6fe55042409f86f96d0dcaecf176 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_ae92543088c841fb85c1f7e49cc80c80 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIE1iaXRpPC9oND4KICAgIG9ic2VydmVkID0gPGI+ODU1PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjEwMzU8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjgyLjYxPGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9NYml0aV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_3dee6fe55042409f86f96d0dcaecf176.setContent(i_frame_ae92543088c841fb85c1f7e49cc80c80);
-            
-
-            marker_ec6ce817d7c447dcaa0154bd0af7a0ba.bindPopup(popup_3dee6fe55042409f86f96d0dcaecf176);
-
-            
-        
-        
-            
-
-            var marker_63ccf2a5cfcc4079b46ba34b5b2553c9 = L.marker(
-                [-9.8333,160.8167],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_657546e5e81d40aa893e38380da42bc6 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_63ccf2a5cfcc4079b46ba34b5b2553c9.setIcon(custom_icon_657546e5e81d40aa893e38380da42bc6);
-            
-        
-            
-            var popup_5446daaeb2b34aca8f67923209831536 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_d12161170e874dc38594f4bbcb786fe2 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIE1hcmF1IDwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjg5NzwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj43ODA8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjExNS4wMDxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fTWFyYXVfXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_5446daaeb2b34aca8f67923209831536.setContent(i_frame_d12161170e874dc38594f4bbcb786fe2);
-            
-
-            marker_63ccf2a5cfcc4079b46ba34b5b2553c9.bindPopup(popup_5446daaeb2b34aca8f67923209831536);
-
-            
-        
-        
-            
-
-            var marker_d4e81cdce436483ab1eb6119bb3b7ed7 = L.marker(
-                [-7.5678,158.4381],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_91197014f07b4b7480777435c2eca533 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_d4e81cdce436483ab1eb6119bb3b7ed7.setIcon(custom_icon_91197014f07b4b7480777435c2eca533);
-            
-        
-            
-            var popup_ba631bea3de64d53b7bab4d81e26a398 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_d3b0c4129e0040afa0e7c090944fe14f = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEtpYTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjEwMjA8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+OTAwPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMTMuMzM8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0tpYV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_ba631bea3de64d53b7bab4d81e26a398.setContent(i_frame_d3b0c4129e0040afa0e7c090944fe14f);
-            
-
-            marker_d4e81cdce436483ab1eb6119bb3b7ed7.bindPopup(popup_ba631bea3de64d53b7bab4d81e26a398);
-
-            
-        
-        
-            
-
-            var marker_8ca9c704507341aa886bedd56a179f28 = L.marker(
-                [-8.1034,159.577],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_3954000ef449405d9d7fbb980bc3e3ba = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_8ca9c704507341aa886bedd56a179f28.setIcon(custom_icon_3954000ef449405d9d7fbb980bc3e3ba);
-            
-        
-            
-            var popup_fe55dbdba1814160b215fa7d3bbb1a9e = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_1ee3b8c63c0e4fa6aa34bef3e528b782 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEZlcmE8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj4xMDUwPC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjg5MTwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTE3Ljg1PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9GZXJhXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_fe55dbdba1814160b215fa7d3bbb1a9e.setContent(i_frame_1ee3b8c63c0e4fa6aa34bef3e528b782);
-            
-
-            marker_8ca9c704507341aa886bedd56a179f28.bindPopup(popup_fe55dbdba1814160b215fa7d3bbb1a9e);
-
-            
-        
-        
-            
-
-            var marker_cb18b7423b4b4f238474c0cb9900594a = L.marker(
-                [-10.4167,161.8833],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_67cad11667d1471db2b5bcce769eec80 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_cb18b7423b4b4f238474c0cb9900594a.setIcon(custom_icon_67cad11667d1471db2b5bcce769eec80);
-            
-        
-            
-            var popup_4258bd0c00ea46d3bdcf4a54c383f664 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_e94a82e46ac449378da9648e6eb60181 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEtpcmEgS2lyYTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjkwNzwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj43OTU8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjExNC4wOTxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fS2lyYV9LaXJhXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_4258bd0c00ea46d3bdcf4a54c383f664.setContent(i_frame_e94a82e46ac449378da9648e6eb60181);
-            
-
-            marker_cb18b7423b4b4f238474c0cb9900594a.bindPopup(popup_4258bd0c00ea46d3bdcf4a54c383f664);
-
-            
-        
-        
-            
-
-            var marker_fef52bd18258405cbd2b2e2798545d5d = L.marker(
-                [-10.2001,161.3309],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_c7c12eff526647b492e74f52cb5e96f5 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_fef52bd18258405cbd2b2e2798545d5d.setIcon(custom_icon_c7c12eff526647b492e74f52cb5e96f5);
-            
-        
-            
-            var popup_229e49284693417fbf264b5367b56170 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_fc8c819d710a4426bf87148bb25e28c4 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIE1hcm91IEJheTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjEwNzU8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+ODU1PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMjUuNzM8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX01hcm91X0JheV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_229e49284693417fbf264b5367b56170.setContent(i_frame_fc8c819d710a4426bf87148bb25e28c4);
-            
-
-            marker_fef52bd18258405cbd2b2e2798545d5d.bindPopup(popup_229e49284693417fbf264b5367b56170);
-
-            
-        
-        
-            
-
-            var marker_39cab6fb02e14bdc92822038220f9164 = L.marker(
-                [-10.8479,162.4547],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_bd3afec31a9642fdbf4a463745e5d803 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_39cab6fb02e14bdc92822038220f9164.setIcon(custom_icon_bd3afec31a9642fdbf4a463745e5d803);
-            
-        
-            
-            var popup_b2c308694ead4e70b6a9ef5a0df23532 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_8ea5c3a318954130a23b248686011c72 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIFNhbnRhIEFuYTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjcyOTwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj44MDA8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjkxLjEyPGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9TYW50YV9BbmFfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAgCiAgICAgICAgCiAgICAgICAg" width="300" height="200"></iframe>')[0];
-                popup_b2c308694ead4e70b6a9ef5a0df23532.setContent(i_frame_8ea5c3a318954130a23b248686011c72);
-            
-
-            marker_39cab6fb02e14bdc92822038220f9164.bindPopup(popup_b2c308694ead4e70b6a9ef5a0df23532);
-
-            
-        
-        
-            
-
-            var marker_5761ef6a168d49fab69d248f3ed190e1 = L.marker(
-                [-8.3333,160.6167],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_02b407d8aac24dc4b1a6c4029cbe2c02 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_5761ef6a168d49fab69d248f3ed190e1.setIcon(custom_icon_02b407d8aac24dc4b1a6c4029cbe2c02);
-            
-        
-            
-            var popup_790eca3cb7704aa2be305ecc897500fa = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_a95d3ff7279e4ffe87f2d802bcc3381e = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIE1hbHUndTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjEwOTY8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+ODU1PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMjguMTk8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX01hbHUndV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_790eca3cb7704aa2be305ecc897500fa.setContent(i_frame_a95d3ff7279e4ffe87f2d802bcc3381e);
-            
-
-            marker_5761ef6a168d49fab69d248f3ed190e1.bindPopup(popup_790eca3cb7704aa2be305ecc897500fa);
-
-            
-        
-        
-            
-
-            var marker_2234c550cb3f41e5a30bfe0ed8f7eac6 = L.marker(
-                [-8.7392,160.9339],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_3870f406f16c4879bbd54f0232362f78 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_2234c550cb3f41e5a30bfe0ed8f7eac6.setIcon(custom_icon_3870f406f16c4879bbd54f0232362f78);
-            
-        
-            
-            var popup_3db8bd15baa94207b743141ee6859b58 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_90e23fb8e38248e8b2b5484a5d9281c9 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEF0b3JpPC9oND4KICAgIG9ic2VydmVkID0gPGI+MTEwMTwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj44MTc8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjEzNC43NjxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fQXRvcmlfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAgCiAgICAgICAgCiAgICAgICAg" width="300" height="200"></iframe>')[0];
-                popup_3db8bd15baa94207b743141ee6859b58.setContent(i_frame_90e23fb8e38248e8b2b5484a5d9281c9);
-            
-
-            marker_2234c550cb3f41e5a30bfe0ed8f7eac6.bindPopup(popup_3db8bd15baa94207b743141ee6859b58);
-
-            
-        
-        
-            
-
-            var marker_cf00407349334b7d8019ad34cd29a937 = L.marker(
-                [-8.6167,160.65],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_6fb9b1dfb195437682e8d210f1a250f9 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_cf00407349334b7d8019ad34cd29a937.setIcon(custom_icon_6fb9b1dfb195437682e8d210f1a250f9);
-            
-        
-            
-            var popup_a71bf1d6b74f4e4ba1fcc3c1ca504954 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_fac30980eef6410fa41aa17f6a4140a4 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEZvdGU8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj4xMTY0PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjc4MjwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTQ4Ljg1PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9Gb3RlXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_a71bf1d6b74f4e4ba1fcc3c1ca504954.setContent(i_frame_fac30980eef6410fa41aa17f6a4140a4);
-            
-
-            marker_cf00407349334b7d8019ad34cd29a937.bindPopup(popup_a71bf1d6b74f4e4ba1fcc3c1ca504954);
-
-            
-        
-        
-            
-
-            var marker_6596b6cc50aa491fb7d58711181d55aa = L.marker(
-                [-8.85,161.0],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_733a680ab84a482392f260426d72b5f6 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_6596b6cc50aa491fb7d58711181d55aa.setIcon(custom_icon_733a680ab84a482392f260426d72b5f6);
-            
-        
-            
-            var popup_ff373c01d8fb492589225d7e6f655c64 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_e38cf8caf6c0473ca69a8cbfa8fef3e8 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEF0b2lmaTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjExMDM8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+NzQ0PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xNDguMjU8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0F0b2lmaV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_ff373c01d8fb492589225d7e6f655c64.setContent(i_frame_e38cf8caf6c0473ca69a8cbfa8fef3e8);
-            
-
-            marker_6596b6cc50aa491fb7d58711181d55aa.bindPopup(popup_ff373c01d8fb492589225d7e6f655c64);
-
-            
-        
-        
-            
-
-            var marker_23e9b6c6bb2a499ea4796fb1fde7ed29 = L.marker(
-                [-9.3167,161.0833],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_9ddd4d2f72ad4190b3c147b40c8d0e83 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_23e9b6c6bb2a499ea4796fb1fde7ed29.setIcon(custom_icon_9ddd4d2f72ad4190b3c147b40c8d0e83);
-            
-        
-            
-            var popup_aa754be72be24c74af945e0d9b0fc3e1 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_4b7a87c9e2c5416a82320b815a61cca9 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIFJvaGluYXJpPC9oND4KICAgIG9ic2VydmVkID0gPGI+OTI5PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjcwNDwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTMxLjk2PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9Sb2hpbmFyaV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_aa754be72be24c74af945e0d9b0fc3e1.setContent(i_frame_4b7a87c9e2c5416a82320b815a61cca9);
-            
-
-            marker_23e9b6c6bb2a499ea4796fb1fde7ed29.bindPopup(popup_aa754be72be24c74af945e0d9b0fc3e1);
-
-            
-        
-        
-            
-
-            var marker_f0141d0aedb44ce88240372537004327 = L.marker(
-                [-8.7042,160.6822],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_7af0a341434a49138125ecd1e88b8120 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_f0141d0aedb44ce88240372537004327.setIcon(custom_icon_7af0a341434a49138125ecd1e88b8120);
-            
-        
-            
-            var popup_cd673dc2c7974ddd8dcdf59ea7f2e349 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_d9f09feba90f450bb31a2ce72e52e89c = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEd3YXVuYXJ1J3U8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj4xMTY0PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjc4MjwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTQ4Ljg1PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9Hd2F1bmFydSd1XzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_cd673dc2c7974ddd8dcdf59ea7f2e349.setContent(i_frame_d9f09feba90f450bb31a2ce72e52e89c);
-            
-
-            marker_f0141d0aedb44ce88240372537004327.bindPopup(popup_cd673dc2c7974ddd8dcdf59ea7f2e349);
-
-            
-        
-        
-            
-
-            var marker_98f77a41730546e780ca4c1d388caf10 = L.marker(
-                [-9.6094,161.4008],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_684c96f5f9644b67b7e6317127b656f3 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_98f77a41730546e780ca4c1d388caf10.setIcon(custom_icon_684c96f5f9644b67b7e6317127b656f3);
-            
-        
-            
-            var popup_84fd1a60ae2f4358a56b8c1e750020e8 = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_01ac2fd311ab4050a70d1959d9bbf681 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEFmaW88L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj4xMDYxPC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjc1NTwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTQwLjUzPGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9BZmlvXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_84fd1a60ae2f4358a56b8c1e750020e8.setContent(i_frame_01ac2fd311ab4050a70d1959d9bbf681);
-            
-
-            marker_98f77a41730546e780ca4c1d388caf10.bindPopup(popup_84fd1a60ae2f4358a56b8c1e750020e8);
-
-            
-        
-        
-            
-
-            var marker_366a3ecfcce244a9a33d1622bf571a78 = L.marker(
-                [-10.7167,165.8333],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
-
-                var custom_icon_c6672d79551445479b363b8dc4b9b9d6 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
-                    
-
-                    
-                    
-                    
-
-                    
-                    });
-                marker_366a3ecfcce244a9a33d1622bf571a78.setIcon(custom_icon_c6672d79551445479b363b8dc4b9b9d6);
-            
-        
-            
-            var popup_500ad3684fd54a6c9e62a2e2f7b0c2dc = L.popup({maxWidth: '600'});
-
-            
-                var i_frame_70af0d79ed734c46ab0cd43bf7efa472 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIExhdGE8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj44MDk8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+Nzk2PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMDEuNjM8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0xhdGFfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAgCiAgICAgICAgCiAgICAgICAg" width="300" height="200"></iframe>')[0];
-                popup_500ad3684fd54a6c9e62a2e2f7b0c2dc.setContent(i_frame_70af0d79ed734c46ab0cd43bf7efa472);
-            
-
-            marker_366a3ecfcce244a9a33d1622bf571a78.bindPopup(popup_500ad3684fd54a6c9e62a2e2f7b0c2dc);
-
-            
-        
-        
-            
-
-            var marker_616ac24f47744dafa3fdaae28f5803b2 = L.marker(
-                [-11.65,166.9],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
-            
-        
-            
+    
 
-                var custom_icon_bb7c6a63ca7140c185a5c1b362f6387e = L.icon({
+                var custom_icon_f0bc06d6102e4657b89d7cd724039460 = L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/yellow.png',
                     iconSize: [18.8,32.5],
                     
@@ -1151,38 +137,886 @@
 
                     
                     });
-                marker_616ac24f47744dafa3fdaae28f5803b2.setIcon(custom_icon_bb7c6a63ca7140c185a5c1b362f6387e);
+                marker_3f06b6b983604bacbb3f35a042687acf.setIcon(custom_icon_f0bc06d6102e4657b89d7cd724039460);
+            
+    
+            var popup_c84794cef7734cc4a3ca893b15f75845 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_510b726fd2424ab88dbd1c78aa66ddab = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBZYW5kaW5hPC9oND4KICAgIG9ic2VydmVkID0gPGI+NzAzPC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjEwMTA8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjY5LjYwPGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9ZYW5kaW5hXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_c84794cef7734cc4a3ca893b15f75845.setContent(i_frame_510b726fd2424ab88dbd1c78aa66ddab);
+            
+
+            marker_3f06b6b983604bacbb3f35a042687acf.bindPopup(popup_c84794cef7734cc4a3ca893b15f75845);
+
             
         
+    
+
+            var marker_fc75ecc00b0646ac894692a766a39081 = L.marker(
+                [-6.711944,156.396111],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
             
-            var popup_42ac2e8f8a964a9f99aafdd4a314df1c = L.popup({maxWidth: '600'});
+    
+
+                var custom_icon_5338649a4057419a8e0db9a5537d4d1c = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
+                    iconSize: [37.6,65.0],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_fc75ecc00b0646ac894692a766a39081.setIcon(custom_icon_5338649a4057419a8e0db9a5537d4d1c);
+            
+    
+            var popup_1b081cb165b949d2bd4c850cea6c9975 = L.popup({maxWidth: '600'});
 
             
-                var i_frame_91a59b7c83134a60bc4b33627d0e65c3 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIFZhbmlrb3JvPC9oND4KICAgIG9ic2VydmVkID0gPGI+NzExPC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjk2MDwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+NzQuMDY8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX1Zhbmlrb3JvXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_42ac2e8f8a964a9f99aafdd4a314df1c.setContent(i_frame_91a59b7c83134a60bc4b33627d0e65c3);
+                var i_frame_1eb48254dc5d4c2eafe9b056a8417dfc = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBDaG9pc3VlbCBCYXk8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj45ODU8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+NzA1PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMzkuNzI8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0Nob2lzdWVsX0JheV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_1b081cb165b949d2bd4c850cea6c9975.setContent(i_frame_1eb48254dc5d4c2eafe9b056a8417dfc);
             
 
-            marker_616ac24f47744dafa3fdaae28f5803b2.bindPopup(popup_42ac2e8f8a964a9f99aafdd4a314df1c);
+            marker_fc75ecc00b0646ac894692a766a39081.bindPopup(popup_1b081cb165b949d2bd4c850cea6c9975);
 
             
         
-        
+    
+
+            var marker_90ef72de202f45f8848c961fb35a1fd8 = L.marker(
+                [-7.0833,156.75],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_51f95b309645456c8bd8a4458e516bc8 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_90ef72de202f45f8848c961fb35a1fd8.setIcon(custom_icon_51f95b309645456c8bd8a4458e516bc8);
+            
+    
+            var popup_3df8fbf96c5642d48b95025d920d537d = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_176ffee73a264e67a3fa4497eca8c145 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBTYXNhbXVuZ2dhPC9oND4KICAgIG9ic2VydmVkID0gPGI+NjExPC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjY4OTwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+ODguNjg8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX1Nhc2FtdW5nZ2FfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_3df8fbf96c5642d48b95025d920d537d.setContent(i_frame_176ffee73a264e67a3fa4497eca8c145);
             
 
-            var marker_0caec576f05242fca18eb2e01f9409ce = L.marker(
+            marker_90ef72de202f45f8848c961fb35a1fd8.bindPopup(popup_3df8fbf96c5642d48b95025d920d537d);
+
+            
+        
+    
+
+            var marker_47a93fd1517e4de59a55a2e4c5333233 = L.marker(
+                [-7.469,157.7434],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_1a771b9e6d9b48e7b656c50774259fdd = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_47a93fd1517e4de59a55a2e4c5333233.setIcon(custom_icon_1a771b9e6d9b48e7b656c50774259fdd);
+            
+    
+            var popup_109d9934c4774073909e679a4f28a3d9 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_818c51a324da47fa99e82f468577216d = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBXYWdpbmE8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj45MDI8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+ODE0PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMTAuODE8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX1dhZ2luYV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_109d9934c4774073909e679a4f28a3d9.setContent(i_frame_818c51a324da47fa99e82f468577216d);
+            
+
+            marker_47a93fd1517e4de59a55a2e4c5333233.bindPopup(popup_109d9934c4774073909e679a4f28a3d9);
+
+            
+        
+    
+
+            var marker_bdff28629d644d108068e012f8350d5c = L.marker(
+                [-9.25,159.65],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_67ee82906b604cd390994be121ceec21 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_bdff28629d644d108068e012f8350d5c.setIcon(custom_icon_67ee82906b604cd390994be121ceec21);
+            
+    
+            var popup_89047958e8e04a6fa8469014a11b7184 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_4acf4fbc25fd43078937b8333bac0f62 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBLZXNhbzwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjkyODwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj44OTk8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjEwMy4yMzxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fS2VzYW9fOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_89047958e8e04a6fa8469014a11b7184.setContent(i_frame_4acf4fbc25fd43078937b8333bac0f62);
+            
+
+            marker_bdff28629d644d108068e012f8350d5c.bindPopup(popup_89047958e8e04a6fa8469014a11b7184);
+
+            
+        
+    
+
+            var marker_392270075d314769a24e05ffb204a625 = L.marker(
+                [-9.41,159.96],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_8987d7729a73480b82cc2d3c0af2b40e = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_392270075d314769a24e05ffb204a625.setIcon(custom_icon_8987d7729a73480b82cc2d3c0af2b40e);
+            
+    
+            var popup_49ce37d1137543878b3bec7486814905 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_a71f4a978a9e4498b4e28b2227e3bb6c = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBIb25pYXJhIChWYXZheWEgUmlkZ2UpPC9oND4KICAgIG9ic2VydmVkID0gPGI+Nzc0PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjgxODwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+OTQuNjI8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0hvbmlhcmFfX1ZhdmF5YV9SaWRnZV9fOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_49ce37d1137543878b3bec7486814905.setContent(i_frame_a71f4a978a9e4498b4e28b2227e3bb6c);
+            
+
+            marker_392270075d314769a24e05ffb204a625.bindPopup(popup_49ce37d1137543878b3bec7486814905);
+
+            
+        
+    
+
+            var marker_2af39a391dbd4e198c32d3248948d93d = L.marker(
+                [-9.8693,160.4115],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_cc152a464050481cbce8195bc57b2b76 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_2af39a391dbd4e198c32d3248948d93d.setIcon(custom_icon_cc152a464050481cbce8195bc57b2b76);
+            
+    
+            var popup_9e15b96b1ddd4794871c8b924d151f7d = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_32d44616653d4eb2ad178aa95f970f5e = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBBdnUgQXZ1PC9oND4KICAgIG9ic2VydmVkID0gPGI+NjcwPC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjcxMzwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+OTMuOTc8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0F2dV9BdnVfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_9e15b96b1ddd4794871c8b924d151f7d.setContent(i_frame_32d44616653d4eb2ad178aa95f970f5e);
+            
+
+            marker_2af39a391dbd4e198c32d3248948d93d.bindPopup(popup_9e15b96b1ddd4794871c8b924d151f7d);
+
+            
+        
+    
+
+            var marker_d499ebe8a4bc4e2a84ad6e1d55eee77a = L.marker(
+                [-9.2838,159.7324],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_88b27066952c46c4a870a047692908e9 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d499ebe8a4bc4e2a84ad6e1d55eee77a.setIcon(custom_icon_88b27066952c46c4a870a047692908e9);
+            
+    
+            var popup_830aa1c4ff8148319cf3fefd869df8f4 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_898d3ec01e9b45a1b6fd25823d179bc7 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBLb2hpbWFyYW1hPC9oND4KICAgIG9ic2VydmVkID0gPGI+NjkwPC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjgzMjwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+ODIuOTM8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0tvaGltYXJhbWFfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_830aa1c4ff8148319cf3fefd869df8f4.setContent(i_frame_898d3ec01e9b45a1b6fd25823d179bc7);
+            
+
+            marker_d499ebe8a4bc4e2a84ad6e1d55eee77a.bindPopup(popup_830aa1c4ff8148319cf3fefd869df8f4);
+
+            
+        
+    
+
+            var marker_3d0d72b0195b42ecbc6a5d406f2a03ae = L.marker(
+                [-9.7277,159.7513],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_bed4e0f11884478fb66996b72cbff24e = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/yellow.png',
+                    iconSize: [18.8,32.5],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_3d0d72b0195b42ecbc6a5d406f2a03ae.setIcon(custom_icon_bed4e0f11884478fb66996b72cbff24e);
+            
+    
+            var popup_1ee8bcdc199a450bba8799faa0b88c51 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_d42d7cfbf3a4489bbed1cdaaa96c3613 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBNYml0aTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjY5NjwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj45NDA8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjc0LjA0PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9NYml0aV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_1ee8bcdc199a450bba8799faa0b88c51.setContent(i_frame_d42d7cfbf3a4489bbed1cdaaa96c3613);
+            
+
+            marker_3d0d72b0195b42ecbc6a5d406f2a03ae.bindPopup(popup_1ee8bcdc199a450bba8799faa0b88c51);
+
+            
+        
+    
+
+            var marker_e89721a45bca42aab9d7869f6e9456f1 = L.marker(
+                [-9.8333,160.8167],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_581d28011eee4ce4b9ccb87897017805 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_e89721a45bca42aab9d7869f6e9456f1.setIcon(custom_icon_581d28011eee4ce4b9ccb87897017805);
+            
+    
+            var popup_3e0f071e354240aa82565ee0c0e80471 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_9218694a7521464fa76e821540fb04d5 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBNYXJhdSA8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj43MzA8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+NzA0PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMDMuNjk8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX01hcmF1X185MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_3e0f071e354240aa82565ee0c0e80471.setContent(i_frame_9218694a7521464fa76e821540fb04d5);
+            
+
+            marker_e89721a45bca42aab9d7869f6e9456f1.bindPopup(popup_3e0f071e354240aa82565ee0c0e80471);
+
+            
+        
+    
+
+            var marker_f1797b4480274a04a5fe8371dba35a7d = L.marker(
+                [-7.5678,158.4381],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_d5d7631e47444525975165e6c5048cc6 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
+                    iconSize: [37.6,65.0],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_f1797b4480274a04a5fe8371dba35a7d.setIcon(custom_icon_d5d7631e47444525975165e6c5048cc6);
+            
+    
+            var popup_acc6b80d11c547e98d1233ec47890e90 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_2bf3925a69de460d84498813d492fee7 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBLaWE8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj4xMDM5PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjg0NzwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTIyLjY3PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9LaWFfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_acc6b80d11c547e98d1233ec47890e90.setContent(i_frame_2bf3925a69de460d84498813d492fee7);
+            
+
+            marker_f1797b4480274a04a5fe8371dba35a7d.bindPopup(popup_acc6b80d11c547e98d1233ec47890e90);
+
+            
+        
+    
+
+            var marker_541d0891bf4641339f610de56d70c0ba = L.marker(
+                [-8.1034,159.577],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_137d90eb5deb4a0b813dac2f1f78f9da = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_541d0891bf4641339f610de56d70c0ba.setIcon(custom_icon_137d90eb5deb4a0b813dac2f1f78f9da);
+            
+    
+            var popup_cc6cd6a92db04f359d8cf91382071131 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_16ac7828d2004a6a902ceda796a29595 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBGZXJhPC9oND4KICAgIG9ic2VydmVkID0gPGI+MTAxODwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj44NjA8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjExOC4zNzxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fRmVyYV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_cc6cd6a92db04f359d8cf91382071131.setContent(i_frame_16ac7828d2004a6a902ceda796a29595);
+            
+
+            marker_541d0891bf4641339f610de56d70c0ba.bindPopup(popup_cc6cd6a92db04f359d8cf91382071131);
+
+            
+        
+    
+
+            var marker_270c9bfe9ef94d358a500522c837db5f = L.marker(
+                [-10.4167,161.8833],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_7060c3920c3642228adb11d3f2489da8 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
+                    iconSize: [37.6,65.0],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_270c9bfe9ef94d358a500522c837db5f.setIcon(custom_icon_7060c3920c3642228adb11d3f2489da8);
+            
+    
+            var popup_33d5fc03a487473e91c3ee687ba0319d = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_89e1bf16c9214b2c9e8caa9e5aa4d20e = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBLaXJhIEtpcmE8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj44NjM8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+Njc3PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMjcuNDc8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0tpcmFfS2lyYV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_33d5fc03a487473e91c3ee687ba0319d.setContent(i_frame_89e1bf16c9214b2c9e8caa9e5aa4d20e);
+            
+
+            marker_270c9bfe9ef94d358a500522c837db5f.bindPopup(popup_33d5fc03a487473e91c3ee687ba0319d);
+
+            
+        
+    
+
+            var marker_c23567e84fb144a3a0a9163f5b096561 = L.marker(
+                [-10.2001,161.3309],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_af49599267e040378e3340dae4e383b5 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_c23567e84fb144a3a0a9163f5b096561.setIcon(custom_icon_af49599267e040378e3340dae4e383b5);
+            
+    
+            var popup_ac48d4a275664d15af41ae32d9951c3d = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_230e8b3663a24244bd22eef4be146afc = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBNYXJvdSBCYXk8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj43NjM8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+NzQ3PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMDIuMTQ8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX01hcm91X0JheV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_ac48d4a275664d15af41ae32d9951c3d.setContent(i_frame_230e8b3663a24244bd22eef4be146afc);
+            
+
+            marker_c23567e84fb144a3a0a9163f5b096561.bindPopup(popup_ac48d4a275664d15af41ae32d9951c3d);
+
+            
+        
+    
+
+            var marker_9321f83a07784ae88646c8691a9cf994 = L.marker(
+                [-10.8479,162.4547],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_79caca4b6c804e7392f8f732ca6c6f4f = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_9321f83a07784ae88646c8691a9cf994.setIcon(custom_icon_79caca4b6c804e7392f8f732ca6c6f4f);
+            
+    
+            var popup_488444ae095543c594c32c04898c131d = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_17da996c4633488380c5ce26bbb7f5fc = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBTYW50YSBBbmE8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj44NjM8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+NzIzPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMTkuMzY8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX1NhbnRhX0FuYV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_488444ae095543c594c32c04898c131d.setContent(i_frame_17da996c4633488380c5ce26bbb7f5fc);
+            
+
+            marker_9321f83a07784ae88646c8691a9cf994.bindPopup(popup_488444ae095543c594c32c04898c131d);
+
+            
+        
+    
+
+            var marker_840157054c9a4940b8470169b4506874 = L.marker(
+                [-8.3333,160.6167],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_75806ce8b74a45a1b5cbd5301081b334 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_840157054c9a4940b8470169b4506874.setIcon(custom_icon_75806ce8b74a45a1b5cbd5301081b334);
+            
+    
+            var popup_2fe3f3e576f049169752c027d1318a27 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_67969ab4f6044d33bd1c3616090b3f5f = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBNYWx1J3U8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj44MjQ8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+ODQxPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj45Ny45ODxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fTWFsdSd1XzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_2fe3f3e576f049169752c027d1318a27.setContent(i_frame_67969ab4f6044d33bd1c3616090b3f5f);
+            
+
+            marker_840157054c9a4940b8470169b4506874.bindPopup(popup_2fe3f3e576f049169752c027d1318a27);
+
+            
+        
+    
+
+            var marker_56b2ace6105f4235893c5bacb3c97f15 = L.marker(
+                [-8.7392,160.9339],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_e00fb41b495e41c0a068ea41390cf235 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_56b2ace6105f4235893c5bacb3c97f15.setIcon(custom_icon_e00fb41b495e41c0a068ea41390cf235);
+            
+    
+            var popup_4e4ff5cf7fae46bd913ba4aaf760f581 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_de00369761a84d12b85b5da0583486f9 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBBdG9yaTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjcyNjwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj44MDI8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjkwLjUyPGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9BdG9yaV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICA=" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_4e4ff5cf7fae46bd913ba4aaf760f581.setContent(i_frame_de00369761a84d12b85b5da0583486f9);
+            
+
+            marker_56b2ace6105f4235893c5bacb3c97f15.bindPopup(popup_4e4ff5cf7fae46bd913ba4aaf760f581);
+
+            
+        
+    
+
+            var marker_0c55bec4b4284ffe8513105a4b6992f7 = L.marker(
+                [-8.6167,160.65],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_9707ae20c79f468b9e85324de07e67df = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_0c55bec4b4284ffe8513105a4b6992f7.setIcon(custom_icon_9707ae20c79f468b9e85324de07e67df);
+            
+    
+            var popup_1102df7a71d14c76b402006a3dfdcae4 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_db40671b12354c9084160592389cc6db = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBGb3RlPC9oND4KICAgIG9ic2VydmVkID0gPGI+NzM3PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjczMTwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTAwLjgyPGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9Gb3RlXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_1102df7a71d14c76b402006a3dfdcae4.setContent(i_frame_db40671b12354c9084160592389cc6db);
+            
+
+            marker_0c55bec4b4284ffe8513105a4b6992f7.bindPopup(popup_1102df7a71d14c76b402006a3dfdcae4);
+
+            
+        
+    
+
+            var marker_935ad43449aa45199b7ff79f14b86863 = L.marker(
+                [-8.85,161.0],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_0c0e9fed55d54b688fd5e7f2c5724928 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_935ad43449aa45199b7ff79f14b86863.setIcon(custom_icon_0c0e9fed55d54b688fd5e7f2c5724928);
+            
+    
+            var popup_5ac6d366f1444a7aa3279a5d990d615e = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_b453709c04ae43d6bb67ae392b3d70b2 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBBdG9pZmk8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj42NjI8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+Njg0PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj45Ni43ODxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fQXRvaWZpXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_5ac6d366f1444a7aa3279a5d990d615e.setContent(i_frame_b453709c04ae43d6bb67ae392b3d70b2);
+            
+
+            marker_935ad43449aa45199b7ff79f14b86863.bindPopup(popup_5ac6d366f1444a7aa3279a5d990d615e);
+
+            
+        
+    
+
+            var marker_bf5a2e137a7c4fada70fcf3b5c934446 = L.marker(
+                [-9.3167,161.0833],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_9bb170437ea449d6974d8f8612415254 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_bf5a2e137a7c4fada70fcf3b5c934446.setIcon(custom_icon_9bb170437ea449d6974d8f8612415254);
+            
+    
+            var popup_d2b5f39674994045897612dac0942961 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_ab8a12e8f0e742c2a848e3497ffe0ec4 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBSb2hpbmFyaTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjYxNDwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj41OTA8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjEwNC4wNzxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fUm9oaW5hcmlfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_d2b5f39674994045897612dac0942961.setContent(i_frame_ab8a12e8f0e742c2a848e3497ffe0ec4);
+            
+
+            marker_bf5a2e137a7c4fada70fcf3b5c934446.bindPopup(popup_d2b5f39674994045897612dac0942961);
+
+            
+        
+    
+
+            var marker_bcb7650cf3e64526910027de485b385b = L.marker(
+                [-8.7042,160.6822],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_047dd4b808f44aa482ec5332d83155ff = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_bcb7650cf3e64526910027de485b385b.setIcon(custom_icon_047dd4b808f44aa482ec5332d83155ff);
+            
+    
+            var popup_e92e48f7a2cf4c88988fb6ff1c52811a = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_90a122c173f949b8bbda650571adab65 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBHd2F1bmFydSd1PC9oND4KICAgIG9ic2VydmVkID0gPGI+NzM3PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjczMTwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTAwLjgyPGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9Hd2F1bmFydSd1XzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_e92e48f7a2cf4c88988fb6ff1c52811a.setContent(i_frame_90a122c173f949b8bbda650571adab65);
+            
+
+            marker_bcb7650cf3e64526910027de485b385b.bindPopup(popup_e92e48f7a2cf4c88988fb6ff1c52811a);
+
+            
+        
+    
+
+            var marker_0341baa6954b407187ac4b707d9be319 = L.marker(
+                [-9.6094,161.4008],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_2b7dd21ed61543689c362fb3b33ba9ea = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
+                    iconSize: [37.6,65.0],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_0341baa6954b407187ac4b707d9be319.setIcon(custom_icon_2b7dd21ed61543689c362fb3b33ba9ea);
+            
+    
+            var popup_6a93476b01db44f089bc2e5967246b44 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_d828cf74087646d08621e6abfc294ddb = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBBZmlvPC9oND4KICAgIG9ic2VydmVkID0gPGI+NzYwPC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjYyOTwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTIwLjgzPGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9BZmlvXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_6a93476b01db44f089bc2e5967246b44.setContent(i_frame_d828cf74087646d08621e6abfc294ddb);
+            
+
+            marker_0341baa6954b407187ac4b707d9be319.bindPopup(popup_6a93476b01db44f089bc2e5967246b44);
+
+            
+        
+    
+
+            var marker_cae995abe95a4d9ca914289564e9189c = L.marker(
+                [-10.7167,165.8333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_3416419821cb40df9fddc5cca86e8235 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
+                    iconSize: [37.6,65.0],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_cae995abe95a4d9ca914289564e9189c.setIcon(custom_icon_3416419821cb40df9fddc5cca86e8235);
+            
+    
+            var popup_5fd5f20c44d14e6aa1af6fa12403891c = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_c37c84427e784d6081726ff305541351 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBMYXRhPC9oND4KICAgIG9ic2VydmVkID0gPGI+ODg3PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjYyNzwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTQxLjQ3PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9MYXRhXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_5fd5f20c44d14e6aa1af6fa12403891c.setContent(i_frame_c37c84427e784d6081726ff305541351);
+            
+
+            marker_cae995abe95a4d9ca914289564e9189c.bindPopup(popup_5fd5f20c44d14e6aa1af6fa12403891c);
+
+            
+        
+    
+
+            var marker_75baba9870dc40fbb7a40f9c5871781f = L.marker(
+                [-11.65,166.9],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
+            
+    
+
+                var custom_icon_a13e33ccf25e48d0bdd1763dca1c82d2 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
+                    iconSize: [37.6,65.0],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_75baba9870dc40fbb7a40f9c5871781f.setIcon(custom_icon_a13e33ccf25e48d0bdd1763dca1c82d2);
+            
+    
+            var popup_2f87964da1de41f8933afb9a81002f86 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_dfdac98957f44402981738b6c0b18e45 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBWYW5pa29ybzwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjEzMTY8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+ODMzPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xNTcuOTg8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX1Zhbmlrb3JvXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_2f87964da1de41f8933afb9a81002f86.setContent(i_frame_dfdac98957f44402981738b6c0b18e45);
+            
+
+            marker_75baba9870dc40fbb7a40f9c5871781f.bindPopup(popup_2f87964da1de41f8933afb9a81002f86);
+
+            
+        
+    
+
+            var marker_75196f684dd5469785a7b7b40ba684bd = L.marker(
                 [-8.1,156.85],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
             
-        
-            
+    
 
-                var custom_icon_aed41488256e43749088dd20439e52da = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
+                var custom_icon_2d471926951343259920ad2528f4c93b = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/yellow.png',
+                    iconSize: [18.8,32.5],
                     
 
                     
@@ -1191,38 +1025,35 @@
 
                     
                     });
-                marker_0caec576f05242fca18eb2e01f9409ce.setIcon(custom_icon_aed41488256e43749088dd20439e52da);
+                marker_75196f684dd5469785a7b7b40ba684bd.setIcon(custom_icon_2d471926951343259920ad2528f4c93b);
+            
+    
+            var popup_df59606a538040a4aa6e2d0eb11891e3 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_8bab7131ebcd49879ec02a843ebac2fd = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBHaXpvPC9oND4KICAgIG9ic2VydmVkID0gPGI+NTI4PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjc1NjwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+NjkuODQ8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0dpem9fOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_df59606a538040a4aa6e2d0eb11891e3.setContent(i_frame_8bab7131ebcd49879ec02a843ebac2fd);
+            
+
+            marker_75196f684dd5469785a7b7b40ba684bd.bindPopup(popup_df59606a538040a4aa6e2d0eb11891e3);
+
             
         
-            
-            var popup_9bc07728d2ea4959bde084ab3a7af2a3 = L.popup({maxWidth: '600'});
+    
 
-            
-                var i_frame_e254af0f1f80440fb0f65410a54c4bf1 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEdpem88L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj4xMDY2PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjkwNTwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTE3Ljc5PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9HaXpvXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_9bc07728d2ea4959bde084ab3a7af2a3.setContent(i_frame_e254af0f1f80440fb0f65410a54c4bf1);
-            
-
-            marker_0caec576f05242fca18eb2e01f9409ce.bindPopup(popup_9bc07728d2ea4959bde084ab3a7af2a3);
-
-            
-        
-        
-            
-
-            var marker_4eebfe1dc7f442109e7943c0db76dea3 = L.marker(
+            var marker_97ac601c20ab4fefa48bbc33244103bd = L.marker(
                 [-8.0333,157.5833],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
             
-        
-            
+    
 
-                var custom_icon_de21bb7c10784a90a02f554cec87f442 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
-                    iconSize: [28.2,48.75],
+                var custom_icon_e4222310334d43d7b8bc0a8647af12aa = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/yellow.png',
+                    iconSize: [18.8,32.5],
                     
 
                     
@@ -1231,36 +1062,33 @@
 
                     
                     });
-                marker_4eebfe1dc7f442109e7943c0db76dea3.setIcon(custom_icon_de21bb7c10784a90a02f554cec87f442);
+                marker_97ac601c20ab4fefa48bbc33244103bd.setIcon(custom_icon_e4222310334d43d7b8bc0a8647af12aa);
+            
+    
+            var popup_1a2afa9852844912850b944096e88bc2 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_26b34ee2dcbb4cdea9ecf5cc6c162e2f = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBCYXJvcmE8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj41NjQ8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+NzUzPC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj43NC45MDxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fQmFyb3JhXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_1a2afa9852844912850b944096e88bc2.setContent(i_frame_26b34ee2dcbb4cdea9ecf5cc6c162e2f);
+            
+
+            marker_97ac601c20ab4fefa48bbc33244103bd.bindPopup(popup_1a2afa9852844912850b944096e88bc2);
+
             
         
-            
-            var popup_13e92ac37b88473b8543be3b86655b6b = L.popup({maxWidth: '600'});
+    
 
-            
-                var i_frame_2d4459b0dcee46fa9daebcb9d66eb82f = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEJhcm9yYTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjc5MDwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj44Mzk8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjk0LjE2PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9CYXJvcmFfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAgCiAgICAgICAgCiAgICAgICAg" width="300" height="200"></iframe>')[0];
-                popup_13e92ac37b88473b8543be3b86655b6b.setContent(i_frame_2d4459b0dcee46fa9daebcb9d66eb82f);
-            
-
-            marker_4eebfe1dc7f442109e7943c0db76dea3.bindPopup(popup_13e92ac37b88473b8543be3b86655b6b);
-
-            
-        
-        
-            
-
-            var marker_60330c15947a4e53afb7162feeae6c57 = L.marker(
+            var marker_43e0de62e40f4fbf8f710fca9b837c76 = L.marker(
                 [-8.5667,157.8833],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
             
-        
-            
+    
 
-                var custom_icon_ef611c6959be4f7bbd1606a708056e03 = L.icon({
+                var custom_icon_f4e3bd017a4643eeb1c2d45cb0d7ae8f = L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
                     iconSize: [28.2,48.75],
                     
@@ -1271,38 +1099,35 @@
 
                     
                     });
-                marker_60330c15947a4e53afb7162feeae6c57.setIcon(custom_icon_ef611c6959be4f7bbd1606a708056e03);
+                marker_43e0de62e40f4fbf8f710fca9b837c76.setIcon(custom_icon_f4e3bd017a4643eeb1c2d45cb0d7ae8f);
+            
+    
+            var popup_0649c90aecf640d4b08a1079890ff739 = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_cd8344687d0c49d7ab280345e6c6fcbc = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBTZWdoZTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjgxMjwvYj4gbW0gPGJyPgogICAgY2xpbWF0b2xvZ3kgPSA8Yj43MjM8L2I+IG1tIDxicj4KICAgIHBlcmNlbnQuIG9mIG5vcm1hbCA9IDxiPjExMi4zMTxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fU2VnaGVfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_0649c90aecf640d4b08a1079890ff739.setContent(i_frame_cd8344687d0c49d7ab280345e6c6fcbc);
+            
+
+            marker_43e0de62e40f4fbf8f710fca9b837c76.bindPopup(popup_0649c90aecf640d4b08a1079890ff739);
+
             
         
-            
-            var popup_78c7ecd0712b4016861bdb43259ec3ed = L.popup({maxWidth: '600'});
+    
 
-            
-                var i_frame_abb9b038b8df49f1b57c9e9b703be604 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIFNlZ2hlPC9oND4KICAgIG9ic2VydmVkID0gPGI+ODI3PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjgxNTwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTAxLjQ3PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9TZWdoZV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_78c7ecd0712b4016861bdb43259ec3ed.setContent(i_frame_abb9b038b8df49f1b57c9e9b703be604);
-            
-
-            marker_60330c15947a4e53afb7162feeae6c57.bindPopup(popup_78c7ecd0712b4016861bdb43259ec3ed);
-
-            
-        
-        
-            
-
-            var marker_a7290e737d4a4a31979f1c868e5fd96f = L.marker(
+            var marker_7ecd0bb5918b4cb0badc2cce098f23aa = L.marker(
                 [-7.7058,156.7256],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
             
-        
-            
+    
 
-                var custom_icon_4f96972df1cf49008536f652b64d9f01 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
+                var custom_icon_72f5592a42634341b3af860d5ca8e95e = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
                     
 
                     
@@ -1311,38 +1136,35 @@
 
                     
                     });
-                marker_a7290e737d4a4a31979f1c868e5fd96f.setIcon(custom_icon_4f96972df1cf49008536f652b64d9f01);
+                marker_7ecd0bb5918b4cb0badc2cce098f23aa.setIcon(custom_icon_72f5592a42634341b3af860d5ca8e95e);
+            
+    
+            var popup_c4d74084f2b54c3682a3d6ae8c9e0f2c = L.popup({maxWidth: '600'});
+
+            
+                var i_frame_91eccf73c1e14f988b68347bcf3da461 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBHaWJpcmk8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj42NTQ8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+NzU1PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj44Ni42MjxiPiAlCiAgICA8YnI+PGJyPgogICAgPGEgaHJlZj0iaHR0cHM6Ly9jZG4ucmF3Z2l0LmNvbS9uaWNvbGFzZmF1Y2hlcmVhdS9TSU1TL21hc3Rlci9UUk1NL3d3dy9WaXJ0dWFsX1N0YXRpb25fR2liaXJpXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIA==" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_c4d74084f2b54c3682a3d6ae8c9e0f2c.setContent(i_frame_91eccf73c1e14f988b68347bcf3da461);
+            
+
+            marker_7ecd0bb5918b4cb0badc2cce098f23aa.bindPopup(popup_c4d74084f2b54c3682a3d6ae8c9e0f2c);
+
             
         
-            
-            var popup_2f8e718474a144a8979a0be93a4656da = L.popup({maxWidth: '600'});
+    
 
-            
-                var i_frame_0ef6f89e7c39480ab6a1dcad917b10ad = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIEdpYmlyaTwvaDQ+CiAgICBvYnNlcnZlZCA9IDxiPjEyNDM8L2I+IG1tIDxicj4KICAgIGNsaW1hdG9sb2d5ID0gPGI+OTM4PC9iPiBtbSA8YnI+CiAgICBwZXJjZW50LiBvZiBub3JtYWwgPSA8Yj4xMzIuNTI8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX0dpYmlyaV85MG5kYXlzLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5jbGljayBoZXJlIGZvciB0aGUgdGltZS1zZXJpZXM8L2E+CiAgICA8L2ZvbnQ+CiAgICAKICAgICAgICAKICAgICAgICA=" width="300" height="200"></iframe>')[0];
-                popup_2f8e718474a144a8979a0be93a4656da.setContent(i_frame_0ef6f89e7c39480ab6a1dcad917b10ad);
-            
-
-            marker_a7290e737d4a4a31979f1c868e5fd96f.bindPopup(popup_2f8e718474a144a8979a0be93a4656da);
-
-            
-        
-        
-            
-
-            var marker_8f13a13682804d82ab57acd37fd0da5f = L.marker(
+            var marker_b4835bb227c641c3a1e5e99a86f8e842 = L.marker(
                 [-8.2632,157.4279],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(feature_group_672155ba837f4693a35e16093d84ccb2);
+                .addTo(feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1);
             
-        
-            
+    
 
-                var custom_icon_ec68e07be9834e00a4751140ea24a7d1 = L.icon({
-                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/blue.png',
-                    iconSize: [37.6,65.0],
+                var custom_icon_45eb7c05611d4a9ea7bcd5cac0ba6e94 = L.icon({
+                    iconUrl: 'https://raw.githubusercontent.com/nicolasfauchereau/SIMS/master/TRMM/images/icons/green.png',
+                    iconSize: [28.2,48.75],
                     
 
                     
@@ -1351,33 +1173,31 @@
 
                     
                     });
-                marker_8f13a13682804d82ab57acd37fd0da5f.setIcon(custom_icon_ec68e07be9834e00a4751140ea24a7d1);
+                marker_b4835bb227c641c3a1e5e99a86f8e842.setIcon(custom_icon_45eb7c05611d4a9ea7bcd5cac0ba6e94);
             
-        
-            
-            var popup_c5bafee0a4974ea896b5769f58bf2b1b = L.popup({maxWidth: '600'});
+    
+            var popup_1396c633e506422bafa1692380e30884 = L.popup({maxWidth: '600'});
 
             
-                var i_frame_419391803b4b4a4b888f4fdbf3f6b763 = $('<iframe src="data:text/html;base64,CiAgICAgICAgCiAgICAgICAgICAgIAogICAgPGZvbnQgZmFjZT0idmVyZGFuYSI+CiAgICA8ZGl2IGFsaWduPSdjZW50ZXInPjxoND4KICAgIExhc3QgOTAgZGF5cyAodG8gdGhlIDIwMTctMDMtMTIgVVRDKSBlc3RpbWF0ZXMgW1RSTU0vVE1QQV0gZm9yIE1iZXVsYWg8L2g0PgogICAgb2JzZXJ2ZWQgPSA8Yj4xMDk2PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjgzMzwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+MTMxLjU3PGI+ICUKICAgIDxicj48YnI+CiAgICA8YSBocmVmPSJodHRwczovL2Nkbi5yYXdnaXQuY29tL25pY29sYXNmYXVjaGVyZWF1L1NJTVMvbWFzdGVyL1RSTU0vd3d3L1ZpcnR1YWxfU3RhdGlvbl9NYmV1bGFoXzkwbmRheXMuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgZm9yIHRoZSB0aW1lLXNlcmllczwvYT4KICAgIDwvZm9udD4KICAgIAogICAgICAgIAogICAgICAgIA==" width="300" height="200"></iframe>')[0];
-                popup_c5bafee0a4974ea896b5769f58bf2b1b.setContent(i_frame_419391803b4b4a4b888f4fdbf3f6b763);
+                var i_frame_6d37748d375c46ed864da7f42193428e = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxmb250IGZhY2U9InZlcmRhbmEiPgogICAgPGRpdiBhbGlnbj0nY2VudGVyJz48aDQ+CiAgICBMYXN0IDkwIGRheXMgKHRvIHRoZSAyMDE3LTA1LTA4IFVUQykgZXN0aW1hdGVzIFtUUk1NL1RNUEFdIGZvciBNYmV1bGFoPC9oND4KICAgIG9ic2VydmVkID0gPGI+NzI0PC9iPiBtbSA8YnI+CiAgICBjbGltYXRvbG9neSA9IDxiPjczNTwvYj4gbW0gPGJyPgogICAgcGVyY2VudC4gb2Ygbm9ybWFsID0gPGI+OTguNTA8Yj4gJQogICAgPGJyPjxicj4KICAgIDxhIGhyZWY9Imh0dHBzOi8vY2RuLnJhd2dpdC5jb20vbmljb2xhc2ZhdWNoZXJlYXUvU0lNUy9tYXN0ZXIvVFJNTS93d3cvVmlydHVhbF9TdGF0aW9uX01iZXVsYWhfOTBuZGF5cy5odG1sIiB0YXJnZXQ9Il9ibGFuayI+Y2xpY2sgaGVyZSBmb3IgdGhlIHRpbWUtc2VyaWVzPC9hPgogICAgPC9mb250PgogICAg" width="300" style="border:none !important;" height="200"></iframe>')[0];
+                popup_1396c633e506422bafa1692380e30884.setContent(i_frame_6d37748d375c46ed864da7f42193428e);
             
 
-            marker_8f13a13682804d82ab57acd37fd0da5f.bindPopup(popup_c5bafee0a4974ea896b5769f58bf2b1b);
+            marker_b4835bb227c641c3a1e5e99a86f8e842.bindPopup(popup_1396c633e506422bafa1692380e30884);
 
             
         
-        
-            
-            var layer_control_91881ddcd28f4e4bb9f6d585063dd84a = {
-                base_layers : { "openstreetmap" : tile_layer_ba1a2e8554994ab8834fe50af3b147de,"World Imagery" : tile_layer_b1a7ac209b19466584bcedb8feeb0c3d,"World Topography" : tile_layer_813d98c9501f400897f63f97b36fe1e8,"Street Map" : tile_layer_4feef058d4b7462d8c0b8318d5d300a2, },
-                overlays : { "Show Solomon Islands Stations" : feature_group_672155ba837f4693a35e16093d84ccb2, }
+    
+            var layer_control_b07d4866c9254ba9b51fee3d446ba071 = {
+                base_layers : { "openstreetmap" : tile_layer_1e638bb5b3724371889a7ac16d9ffbe7,"World Imagery" : tile_layer_e9bb0bec5cce47dc841e8fa0e9f20bbf,"World Topography" : tile_layer_dfa152a3ace14a7fb0eadb089f56cd5e,"Street Map" : tile_layer_414a3406b81a44b787ba555b2b7c68c2, },
+                overlays : { "Show Solomon Islands Stations" : feature_group_8fcc3f4a707d4e0ab0b740daae4c63c1, }
                 };
             L.control.layers(
-                layer_control_91881ddcd28f4e4bb9f6d585063dd84a.base_layers,
-                layer_control_91881ddcd28f4e4bb9f6d585063dd84a.overlays
-                ).addTo(map_86c789df7be541a1b10ba8998a251ee0);
+                layer_control_b07d4866c9254ba9b51fee3d446ba071.base_layers,
+                layer_control_b07d4866c9254ba9b51fee3d446ba071.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_73d2d0ddbf5c48249acbe74146553a31);
         
-        
-        
-        </script>
-        
+</script>
